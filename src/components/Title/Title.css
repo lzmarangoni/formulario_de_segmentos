@@ -1,0 +1,9 @@
+.title{
+    text-align: center;
+    margin: 0;
+}
+
+.title h1{
+    font-size: 6rem;
+    margin: 1rem;
+}
