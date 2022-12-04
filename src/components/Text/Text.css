@@ -1,0 +1,12 @@
+.text{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text p{
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    color: #7a7a7a;
+}
