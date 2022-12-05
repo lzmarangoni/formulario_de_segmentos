@@ -1,0 +1,30 @@
+.App .titleDivision{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 6rem;
+    justify-content: center;
+}
+
+.App .titleDivision .iconText {
+   display: flex;
+   align-items: baseline;
+   margin: 0 auto;
+   justify-content: center;
+  
+}
+
+.App .styledButtons{
+    margin:5rem auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    font-weight: 
+}
+
+.App .edit{
+    margin: 1rem 2rem 15rem 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

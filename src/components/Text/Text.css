@@ -1,10 +1,11 @@
 .text{
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .text p{
+    margin: 0.5rem;
     font-size: 2rem;
     box-sizing: border-box;
     padding: 0 2rem;
