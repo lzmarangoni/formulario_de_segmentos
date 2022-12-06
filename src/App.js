@@ -38,6 +38,13 @@ function App() {
     }
     const [activityAreas, setActivityAreas]  =  useState([])
     const [areaDefault, setAreaDefault] = useState(areasName[0])
+    const [searchValue, setSearchValue] =useState('')
+    
+    const captureValue = (e)=>{
+        setSearchValue(e.target.value)
+         console.log(searchValue)
+    }
+
 
   return (
     <div className="App">
@@ -55,10 +62,11 @@ function App() {
         <Title style={{marginBottom:'0rem'}} title={areaDefault} />
         <a onClick={createList}><AiFillEdit size={70} style={{color:'#1799e3', marginLeft:'2rem'} }/></a>
       </div> </div>}
-      <div className='list'>
+      <div className='list'>  
         <ul>
-          {activityAreas.length > 0 && <SearchBar/> }
-          {activityAreas.map(item=> <li onClick={()=>{selectActivity(item.name)}} key={item.id}>{item.name}</li>)}
+          {activityAreas.length > 0 && <SearchBar onChange={captureValue} onClick={()=>console.log('pesquisar')}/> }
+          {activityAreas.filter(item=> item.name.includes(searchValue)).map(item=> <li onClick={()=>{selectActivity(item.name)}} key={item.id}>{item.name}</li>)}
+           
         </ul>
             
       </div>

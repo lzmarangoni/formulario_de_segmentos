@@ -1,9 +1,10 @@
 import './SearchBar.css'
-
-const SearchBar = ()=>{
+import {AiOutlineSearch} from 'react-icons/ai'
+const SearchBar = (props)=>{
     return(
-        <div>
-            <input/>
+        <div className='searchBar'>
+            <input onChange={props.onChange}placeholder={props.placeholder}></input>
+            <AiOutlineSearch onClick={props.onClick} size={25} className='searchIcon'/>
         </div>
     )
 }
