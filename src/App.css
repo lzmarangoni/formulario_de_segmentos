@@ -1,7 +1,12 @@
+.App{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 5rem auto;
+}
 .App .titleDivision{
     margin: 0 auto;
     width: 90%;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     justify-content: center;
 }
 
@@ -16,14 +21,14 @@
 .App .styledButtons{
     margin:5rem auto;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    width:80%;
+    width:70%;
     
 }
 
 .App .edit{
-    margin: 1rem 2rem 15rem 2rem ;
+    margin: 0rem 2rem 5rem 2rem ;
     display: flex;
     align-items: center;
     justify-content: center;
