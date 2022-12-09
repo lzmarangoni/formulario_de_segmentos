@@ -1,7 +1,8 @@
 .App{
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     padding: 5rem auto;
+    
 }
 .App .titleDivision{
     margin: 0 auto;
@@ -28,9 +29,16 @@
 }
 
 .App .edit{
-    margin: 0rem 2rem 5rem 2rem ;
+    margin: 1rem auto ;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70%;
 }
 
+.App .list ul{
+    margin: 2rem auto;
+    width: 70%;
+    overflow-y: scroll;
+    height: 13rem;
+}
